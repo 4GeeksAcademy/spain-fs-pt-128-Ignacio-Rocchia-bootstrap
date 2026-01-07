@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Feed</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light p-3">
+        <div class="container-fluid">
+            <div class="d-flex w-100 justify-content-between">
+                <div>
+                    <i class="fa-brands fa-instagram fa-xl"></i>
+                    <h5 class="d-inline-flex">Instagram</h5>
+                </div>
+                <div class="d-flex align-right justify-content-end">
+                    <button type="button" class="btn btn-success me-2" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Create a new post
+                    </button>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="#">Accesibility</a>
+                            <a class="dropdown-item" href="#">Privacy and Data</a>
+                            <div><hr class="dropdown-divider"></div>
+                            <a class="dropdown-item text-danger" href="#">Log out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="modal" id="exampleModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Create a new post</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Caption:</h6>
+                    <textarea class="form-control" placeholder="Add the caption of your post here"></textarea>
+                    <div class="row p-2">
+                        <button class="col-1 border rounded p-1 m-1 btn-light">
+                            <i class="fa-solid fa-camera"></i>
+                        </button>
+                        <button class="col-1 border rounded p-1 m-1 btn-light">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid p-2">
+        <ul class="nav nav-pill justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#home" type="button"><i class="fa-solid fa-table-cells"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#profile" type="button"><i class="fa-solid fa-square"></i></a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane fade show active overflow-hidden" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="row">
+                    <div class="col-4 p-1"><img style="height: 550px;object-fit: cover;" src="https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/9/94/Portrait_kitsuragi.png/revision/latest?cb=20220221100148" class="img-fluid w-100" alt=""></div>
+                    <div class="col-4 p-1"><img style="height: 550px; object-fit: cover;" src="https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/8/83/Portrait_you.png/revision/latest?cb=20191028100206" class="img-fluid w-100" alt=""></div>
+                    <div class="col-4 p-1"><img style="height: 550px; object-fit: cover;" src="https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/6/69/Portrait_klaasje.png/revision/latest?cb=20191028100307" class="img-fluid w-100" alt=""></div>
+                </div>
+                <div class="row">
+                    <div class="col-4 p-1"><img style="height: 550px; object-fit: cover;" src="https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/5/51/Portrait_hanged.png/revision/latest?cb=20191028100302" class="img-fluid w-100" alt=""></div>
+                    <div class="col-4 p-1"><img style="height: 550px; object-fit: cover;" src="https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/0/03/Portrait_phasmid.png/revision/latest?cb=20191028100329" class="img-fluid w-100" alt=""></div>
+                    <div class="col-4 p-1"><img style="height: 550px; object-fit: cover;" src="https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/d/d1/Portrait_cuno.png/revision/latest?cb=20191028100230" class="img-fluid w-100" alt=""></div>
+                </div>
+                <div class="row">
+                    <div class="col-4 p-1"><img style="height: 550px; object-fit: cover;" src="https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/9/95/Portrait_evrart.png/revision/latest?cb=20191028100247" class="img-fluid w-100" alt=""></div>
+                    <div class="col-4 p-1"><img style="height: 550px; object-fit: cover;" src="https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/4/4e/Portrait_measurehead.png/revision/latest?cb=20191028100319" class="img-fluid w-100" alt=""></div>
+                    <div class="col-4 p-1"><img style="height: 550px; object-fit: cover;" src="https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/9/93/Portrait_deserter.png/revision/latest?cb=20191028100235" class="img-fluid w-100" alt=""></div>
+                </div>
+            </div>
+            <div class="tab-pane fade overflow-hidden" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="row my-4">
+                    <div class="col-6 mx-auto border rounded p-0">
+                        <div class="d-flex p-3">
+                            <div class="w-100 fs-4">Kim Kitsuragi</div>
+                            <small class="align-bottom">02/01</small>
+                        </div>
+                        <img src="https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/9/94/Portrait_kitsuragi.png/revision/latest?cb=20220221100148" class="img-fluid w-100 col-12" alt=""/>
+                        <div class="p-3">
+                            <strong>2322 Likes</strong>
+                            <p>Detective del presincto 41</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-6 mx-auto border rounded p-0">
+                        <div class="d-flex p-3">
+                            <div class="w-100 fs-4">Harry Du Bois</div>
+                            <small>04/01</small>
+                        </div>
+                        <img  src="https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/8/83/Portrait_you.png/revision/latest?cb=20191028100206" class="img-fluid w-100 col-12" alt=""/>
+                        <div class="p-3">
+                            <strong>8934264 Likes</strong>
+                            <p>Me levante lindo, lo mas probable es que la borre mas tarde</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-6 mx-auto border rounded p-0">
+                        <div class="d-flex p-3">
+                            <div class="w-100 fs-4">klaasje</div>
+                            <small>05/01</small>
+                        </div>
+                        <img src="https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/6/69/Portrait_klaasje.png/revision/latest?cb=20191028100307" class="img-fluid w-100 col-12" alt=""/>
+                        <div class="p-3">
+                            <strong>23 Likes</strong>
+                            <p>klaasje mugshot</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
